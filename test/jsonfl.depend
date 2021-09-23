@@ -1,0 +1,41 @@
+# depslib dependency file v1.0
+1616330835 source:/home/polasekm/ownCloud/SEA/Projects/GSM-TIPEC4/jsonfl/jsonfl/main.cpp
+	<iostream>
+	<cstdio>
+	"jsonfl/jsonfl.h"
+
+1616367184 onfl.h"
+
+1616287627 /home/polasekm/ownCloud/SEA/Projects/GSM-TIPEC4/jsonfl/jsonfl/jsonfl/jsonfl.h
+	<string.h>
+	<stdint.h>
+
+1616367081 
+
+1616332769 source:/home/polasekm/ownCloud/SEA/Projects/GSM-TIPEC4/jsonfl/jsonfl/jsonfl/jsonfl.c
+	"jsonfl.h"
+
+1616367184 source:c:\users\polas\owncloud\sea\projects\gsm-tipec4\jsonfl\jsonfl\main.cpp
+	<iostream>
+	<cstdio>
+	"jsonfl/jsonfl.h"
+
+1616366174 c:\users\polas\owncloud\sea\projects\gsm-tipec4\jsonfl\jsonfl\jsonfl\jsonfl.h
+	<string.h>
+	<stdint.h>
+
+1616367081 source:c:\users\polas\owncloud\sea\projects\gsm-tipec4\jsonfl\jsonfl\jsonfl\jsonfl.c
+	"jsonfl.h"
+
+1616401219 source:/home/polasekm/ownCloud/SEA/Projects/GSM-TIPEC4/jsonfl/jsonfl/jsonfl/jsonfl.c
+	"jsonfl.h"
+
+1616366174 /home/polasekm/ownCloud/SEA/Projects/GSM-TIPEC4/jsonfl/jsonfl/jsonfl/jsonfl.h
+	<string.h>
+	<stdint.h>
+
+1616401245 source:/home/polasekm/ownCloud/SEA/Projects/GSM-TIPEC4/jsonfl/jsonfl/main.cpp
+	<iostream>
+	<cstdio>
+	"jsonfl/jsonfl.h"
+

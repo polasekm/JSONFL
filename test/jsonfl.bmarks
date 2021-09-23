@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<BrowseTracker_layout_file>
+	<ActiveTarget name="Debug" />
+	<File name="jsonfl\jsonfl.c" open="1" top="0" tabpos="3">
+		<Cursor position="2833" topLine="93" />
+		<BrowseMarks positions="3767,4054" />
+		<Book_Marks positions="" />
+	</File>
+	<File name="jsonfl\jsonfl.h" open="1" top="0" tabpos="2">
+		<Cursor position="2418" topLine="53" />
+		<BrowseMarks positions="" />
+		<Book_Marks positions="" />
+	</File>
+	<File name="main.cpp" open="1" top="1" tabpos="1">
+		<Cursor position="1377" topLine="36" />
+		<BrowseMarks positions="538" />
+		<Book_Marks positions="" />
+	</File>
+</BrowseTracker_layout_file>
