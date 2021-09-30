@@ -79,11 +79,11 @@ typedef struct jsonfl
 
 // Functions -------------------------------------------------------------------
 
-   void jsonfj_init(jsonfl_t *json, void (*callback)(jsonfl_t*)); //init json parser
+   void jsonfl_init(jsonfl_t *json, void (*callback)(jsonfl_t*)); //init json parser
 
    uint32_t jsonfl_read(jsonfl_t *json, const char *data, uint32_t len);  //read json data
-   void jsonfj_reset(jsonfl_t *json);    //reset json parser
-uint8_t jsonfj_state(jsonfl_t *json);    //get parser state
+   void jsonfl_reset(jsonfl_t *json);    //reset json parser
+uint8_t jsonfl_state(jsonfl_t *json);    //get parser state
 
 //------------------------------------------------------------------------------
 #ifdef __cplusplus

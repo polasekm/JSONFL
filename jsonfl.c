@@ -1,7 +1,7 @@
 #include "jsonfl.h"
 
 //------------------------------------------------------------------------------
-void jsonfj_init(jsonfl_t *json, void (*callback)(jsonfl_t*))     //init json parser
+void jsonfl_init(jsonfl_t *json, void (*callback)(jsonfl_t*))     //init json parser
 {
   json->state = JNFL_STAT_W_START;
 
@@ -20,7 +20,7 @@ void jsonfj_init(jsonfl_t *json, void (*callback)(jsonfl_t*))     //init json pa
   json->callback = callback;
 }
 //------------------------------------------------------------------------------
-void jsonfj_reset(jsonfl_t *json)    //reset json parser
+void jsonfl_reset(jsonfl_t *json)    //reset json parser
 {
   json->state = JNFL_STAT_W_START;
 
@@ -29,7 +29,7 @@ void jsonfj_reset(jsonfl_t *json)    //reset json parser
   json->val_type = JNFL_TYPE_NULL;
 }
 //------------------------------------------------------------------------------
-uint8_t jsonfj_state(jsonfl_t *json)    //get parser state
+uint8_t jsonfl_state(jsonfl_t *json)    //get parser state
 {
   return json->state;
 }
