@@ -19,7 +19,7 @@ int main()
 
   jsonfl_t json;
 
-  jsonfj_init(&json, json_item_proc);
+  jsonfl_init(&json, json_item_proc);
   pFile = fopen ("bin/Debug/json_example4.json", "r");
 
   if(pFile != NULL)
@@ -47,7 +47,7 @@ int main()
     printf(read_buff);
 
     jsonfl_read(&json, read_buff, result);
-    printf("Parser state: %u\n", jsonfj_state(&json));
+    printf("Parser state: %u\n", jsonfl_state(&json));
 
     fclose (pFile);
   }
