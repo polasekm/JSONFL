@@ -63,7 +63,7 @@ typedef struct jsonfl
 
   uint8_t deep;
   jsonfl_type_t val_type;         //value type
-  uint8_t escape;
+  uint8_t escape;            //never used
 
   char buff[JNFL_BUFF_LEN + 1];   //buff + /0
 
@@ -84,6 +84,8 @@ typedef struct jsonfl
    uint32_t jsonfl_read(jsonfl_t *json, const char *data, uint32_t len);  //read json data
    void jsonfl_reset(jsonfl_t *json);    //reset json parser
 uint8_t jsonfl_state(jsonfl_t *json);    //get parser state
+
+void json_putstring(char **dst, size_t *rem, const char *src);
 
 //------------------------------------------------------------------------------
 #ifdef __cplusplus

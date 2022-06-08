@@ -134,6 +134,7 @@ uint32_t jsonfl_read(jsonfl_t *json, const char *data, uint32_t len) //read json
       }
       else if(json->val_type == JNFL_TYPE_STRING)
       {
+        //TODO: nekdo jaxi zapomnel udelat escape \\, \"
         if(ch == '"')
         {
           *(json->val_p) = 0;
@@ -281,5 +282,40 @@ uint32_t jsonfl_read(jsonfl_t *json, const char *data, uint32_t len) //read json
     }
   }
   return len;
+}
+//------------------------------------------------------------------------------
+void json_putstring(char **dst, size_t *rem, const char *src)
+{
+  size_t dummy;
+  if (rem==0)
+  {
+    dummy=1000;
+    rem=&dummy;
+  };
+  if (*rem==0)
+    return;
+  for (;;)
+  {
+    char c=*(src++);
+    if (c==0)
+      break;
+    if (c=='\\' || c=='\"')
+    {
+      if (*rem<=2)
+        break;
+      *((*dst)++)='\\';
+      *((*dst)++)=c;
+      (*rem)-=2;
+    }
+    else
+    {
+      if (*rem<=1)
+        break;
+      *((*dst)++)=c;
+      (*rem)--;
+    }
+  }
+  *((*dst)++)=0;
+  (*rem)--;
 }
 //------------------------------------------------------------------------------
