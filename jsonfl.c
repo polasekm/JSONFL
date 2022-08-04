@@ -315,7 +315,7 @@ void json_putstring(char **dst, size_t *rem, const char *src)
       (*rem)--;
     }
   }
-  *((*dst)++)=0;
-  (*rem)--;
+  **dst=0; //pro jednodussi navazovani, 0 zapisu ale neposunu ptr, takze trvale zustava 1 B volny
+  //(*rem)--;
 }
 //------------------------------------------------------------------------------
