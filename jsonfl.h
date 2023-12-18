@@ -21,7 +21,6 @@
 /* Exported functions ------------------------------------------------------- */
 
 /* Defines -------------------------------------------------------------------*/
-
 #define JNFL_BUFF_LEN           256
 
 // Parser state
@@ -31,16 +30,6 @@
 #define JNFL_STAT_ITEM_SEP      6
 #define JNFL_STAT_END           7
 #define JNFL_STAT_ERROR         8
-
-// Value types
-/*#define JNFL_TYPE_STRING        0
-#define JNFL_TYPE_NUMBER        1
-#define JNFL_TYPE_OBJECT        2
-#define JNFL_TYPE_ARRAY         3
-#define JNFL_TYPE_B_TRUE        4
-#define JNFL_TYPE_B_FALSE       5
-#define JNFL_TYPE_NULL          6
-#define JNFL_TYPE_UNKNOWN       7*/
 
 typedef enum
 {
@@ -56,14 +45,13 @@ typedef enum
 } jsonfl_type_t;
 
 //------------------------------------------------------------------------------
-//typedef struct jsonfl
 typedef struct jsonfl
 {
   uint8_t state;                  //state
 
   uint8_t deep;
   jsonfl_type_t val_type;         //value type
-  uint8_t escape;            //never used
+  uint8_t escape;                 //never used
 
   char buff[JNFL_BUFF_LEN + 1];   //buff + /0
 

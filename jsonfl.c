@@ -317,5 +317,12 @@ void json_putstring(char **dst, size_t *rem, const char *src)
   }
   **dst=0; //pro jednodussi navazovani, 0 zapisu ale neposunu ptr, takze trvale zustava 1 B volny
   //(*rem)--;
+
+  /* TODO Proverit - predchozi comit udelal upravu vyze, ale GSM-PEPA pouzival:
+
+  *((*dst)++)=0;
+  (*rem)--;
+
+  */
 }
 //------------------------------------------------------------------------------
